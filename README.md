@@ -1,7 +1,7 @@
 ﻿# [SSTM-PyPI](https://pypi.org/project/sstm-flow/)<br/>
 
 ## Package Description
-SSTM-PyPI is a python package for dense optical flow estimation from image sequences, based on our method deep-learning method, [SSTM: Spatiotemporal recurrent transformers for multi-frame optical flow estimation](https://github.com/Computational-Ocularscience/SSTM).  
+SSTM-PyPI is a python package for dense optical flow estimation from image sequences based on our method deep-learning method, [SSTM: Spatiotemporal recurrent transformers for multi-frame optical flow estimation](https://github.com/Computational-Ocularscience/SSTM).  
 It supports both **two-frame** and **three-frame** inference.
 
 For a two-frame input, the package predicts a single flow field:

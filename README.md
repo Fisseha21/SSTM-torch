@@ -102,9 +102,10 @@ results/
 ├── flow0001.png
 ```
 ## Model weight description and task specific recommendation
+Under checkpoints/.. there are three different fine-tuned versions of SSTM
 | Model | Description | Recommended Use |
 |------|-------------|----------------|
-| **ft-speckle-sintel** | Fine-tuned for motion patterns that exhibit **local spatial deformation**. | Biomechanics, elastography, biological tissue motion, speckle tracking |
+| **ft-speckle-sintel** | Fine-tuned for motion patterns that exhibit **local spatial deformation**. | Biomechanics, [elastography](https://computational-ocularscience.github.io/kinemanet.github.io/), biological tissue motion, speckle tracking |
 | **ft-sintel** | General-purpose optical flow model trained on **non-rigid motion with diverse dynamics**. | Natural scenes, animation, and general research applications |
 | **ft-kitti** | Fine-tuned for **rigid scene motion** typical in driving environments. | Autonomous driving, vehicle motion, rigid object tracking |
 

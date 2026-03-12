@@ -102,7 +102,7 @@ results/
 ├── flow0001.png
 ```
 ## Model weight description and task specific recommendation
-Under checkpoints/.. there are three different fine-tuned versions of SSTM
+Under `checkpoints/.` there are three different fine-tuned versions of SSTM
 | Model | Description | Recommended Use |
 |------|-------------|----------------|
 | **ft-speckle-sintel** | Fine-tuned for motion patterns that exhibit **local spatial deformation**. | Biomechanics, [elastography](https://computational-ocularscience.github.io/kinemanet.github.io/), biological tissue motion, speckle tracking |

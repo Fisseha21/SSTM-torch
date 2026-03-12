@@ -1,7 +1,24 @@
-﻿# [Speckle Dataset Generation](https://github.com/Computational-Ocularscience/KinemaNet)<br/>
+﻿# [SSTM-PYPI](https://pypi.org/project/sstm-flow/)<br/>
 
 ## Package Description
+[SSTM: Spatiotemporal recurrent transformers for multi-frame optical flow estimation](https://github.com/Computational-Ocularscience/KinemaNet), is a deep learning package for dense optical flow estimation from image sequences.  
+It supports both **two-frame** and **three-frame** inference.
 
+For a two-frame input, the package predicts a single flow field:
+
+- `f12`: optical flow from frame 1 → frame 2
+
+For a three-frame input, the package predicts two flow fields:
+
+- `f12`: optical flow from frame 1 → frame 2
+- `f23`: optical flow from frame 2 → frame 3
+
+The package also supports:
+
+- input image paths
+- already loaded OpenCV / NumPy images
+- optional saving of flow fields as `.flo`
+- optional color-wheel visualization of predicted flow
 ## Installation
 ```
 conda create -n sstm_env python=3.10

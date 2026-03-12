@@ -32,7 +32,7 @@ pip install sstm-flow
 from sstm import estimate_flow
 
 flow = estimate_flow(
-    "checkpoints/sstm_t++-sintel.pth",
+    "checkpoints/ft-sintel.pth",
     "frame_0013.png",
     "frame_0014.png"
 )
@@ -43,7 +43,7 @@ flow = estimate_flow(
 from sstm import estimate_flow
 
 f12, f23 = estimate_flow(
-    "checkpoints/sstm_t++-sintel.pth",
+    "checkpoints/ft-sintel.pth",
     "frame_0013.png",
     "frame_0014.png",
     "frame_0015.png"
@@ -61,7 +61,7 @@ img1 = cv2.imread("frame_0013.png")
 img2 = cv2.imread("frame_0014.png")
 
 flow = estimate_flow(
-    "checkpoints/sstm_t++-sintel.pth",
+    "checkpoints/ft-sintel.pth",
     img1,
     img2
 )
@@ -74,7 +74,7 @@ If running inference on multiple frame pairs, load the model once.
 import cv2
 from sstm import load_model, infer_flow_pair
 
-model = load_model("checkpoints/sstm_t++-sintel.pth")
+model = load_model("checkpoints/ft-sintel.pth")
 
 img1 = cv2.imread("frame_0013.png")
 img2 = cv2.imread("frame_0014.png")
@@ -87,7 +87,7 @@ flow = infer_flow_pair(model, img1, img2)
 from sstm import estimate_flow
 
 estimate_flow(
-    "checkpoints/sstm_t++-sintel.pth",
+    "checkpoints/ft-sintel.pth",
     "frame_0013.png",
     "frame_0014.png",
     output_dir="results",
@@ -101,6 +101,12 @@ results/
 ├── flow0001.flo
 ├── flow0001.png
 ```
+## Model weight description and task specific recommendation
+| Model | Description | Recommended Use |
+|------|-------------|----------------|
+| **ft-speckle-sintel** | Fine-tuned for motion patterns that exhibit **local spatial deformation**. | Biomechanics, elastography, biological tissue motion, speckle tracking |
+| **ft-sintel** | General-purpose optical flow model trained on **non-rigid motion with diverse dynamics**. | Natural scenes, animation, and general research applications |
+| **ft-kitti** | Fine-tuned for **rigid scene motion** typical in driving environments. | Autonomous driving, vehicle motion, rigid object tracking |
 
 ## Citation
 If you find this work useful please cite:

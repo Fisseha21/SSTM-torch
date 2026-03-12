@@ -1,4 +1,4 @@
-﻿# [SSTM-PYPI](https://pypi.org/project/sstm-flow/)<br/>
+﻿# [SSTM-PyPI](https://pypi.org/project/sstm-flow/)<br/>
 
 ## Package Description
 [SSTM: Spatiotemporal recurrent transformers for multi-frame optical flow estimation](https://github.com/Computational-Ocularscience/KinemaNet), is a deep learning package for dense optical flow estimation from image sequences.  
